@@ -21,6 +21,8 @@ public class CalcController {
 
     @GetMapping("/api/digitsum/usage")
     public static int getUsage(){
+        if (cnt > 0)
+            cnt = cnt-1;
         return cnt;
     }
 
