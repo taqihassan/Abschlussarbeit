@@ -11,4 +11,12 @@ class CalcControllerTest {
         assertEquals(4,CalcController.getSum(number));
     }
 
+    @Test
+    void getUsage() {
+        CalcController.getSum(1111);
+        CalcController.getSum(1234);
+        int expected = 2;
+        assertEquals(expected, CalcController.getUsage());
+    }
+
 }
